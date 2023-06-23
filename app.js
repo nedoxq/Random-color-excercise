@@ -14,9 +14,11 @@ const newColorMaker = function () {
     if ((r + g + b) < 200) {
         h1.style.color = "white";
         button.style.color = "white";
+        button.style.borderColor = "white";
     } else {
         h1.style.color = "black";
         button.style.color = "black";
+        button.style.borderColor = "black";
     }
     return `rgb(${r},${g},${b})`;
 }
